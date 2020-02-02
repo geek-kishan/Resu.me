@@ -1,0 +1,24 @@
+<div class="rsm-signup-form-container">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <h3>Signup</h3>
+        <label for="firstname">Firstname</label>
+        <input type="firstname" name="firstname" id="firstname" formControlName="firstname">
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('firstname').touched && signupForm.get('firstname').errors?.required">Firstname is required!</small>
+        <label for="lastname">Lastname</label>
+        <input type="lastname" name="lastname" id="lastname" formControlName="lastname">
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('lastname').touched && signupForm.get('lastname').errors?.required">Lastname is required!</small>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" formControlName="email">
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('email').touched && signupForm.get('email').errors?.required">Email is required!</small>
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('email').touched && signupForm.get('email').errors?.email">Wrong email format!</small>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" formControlName="password">
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('password').touched && signupForm.get('password').errors?.required">Password is required!</small>
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('password').touched && signupForm.get('password').errors?.minlength">Password should be atleast 6 char long!</small>
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" formControlName="confirmpassword">
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('confirmpassword').touched && signupForm.get('confirmpassword').errors?.required">Confirm password is required!</small>
+        <small class="rsm-form-validation-error" *ngIf="signupForm.get('confirmpassword').touched && signupForm.errors?.mismatch">Confirm password not matchching</small>
+        <button type="submit">Signup</button>
+    </form>
+</div>

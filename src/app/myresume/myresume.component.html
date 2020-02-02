@@ -1,0 +1,13 @@
+<div class="rsm-my-resume">
+    <div class="rsm-sidebar" [class.rsm-sidebar-toggled]="isShow">
+        <div class="rsm-sidebar-heading">
+            <h2>Category</h2>
+        </div>
+    </div>
+    <div class="rsm-content-area" [class.rsm-content-area-toggled]="isShow">
+        <div class="rsm-content-area-heading-bar">
+            <fa-icon [icon]="faBars" class="rsm-sidebar-toggler-icon" (click)="toggleSidebar()"></fa-icon>
+            <h2 class="rsm-content-area-text">My Resume details</h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="rsm-login-form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <h3>LogIn</h3>
+        <small class="rsm-form-validation-error" *ngIf="this.loginForm.invalid && isSubmitted">Please enter required details!</small>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" formControlName="email">
+        <small class="rsm-form-validation-error" *ngIf="loginForm.get('email').touched && loginForm.get('email').errors?.required">Email is required!</small>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" formControlName="password">
+        <small class="rsm-form-validation-error" *ngIf="loginForm.get('password').touched && loginForm.get('password').errors?.required">Password is required!</small>
+        <button type="submit">LogIn</button>
+    </form>
+</div>

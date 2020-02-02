@@ -1,0 +1,100 @@
+.rsm-signup-form-container {
+    width: 25%;
+    margin: auto;
+    margin-top: 2cm;
+}
+.rsm-signup-form-container > form > label {
+    width: 100%;
+    display: inline-block;
+    font-size: 21px;
+}
+.rsm-signup-form-container > form {
+    border: 3px solid blue;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+.rsm-signup-form-container > form > h3 {
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.rsm-signup-form-container > form > input {
+    display: inline-block;
+    width: 100%;
+    font-size: 21px;
+    margin: 15px 0;
+    padding: 6px;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.rsm-signup-form-container > form > button {
+    font-size: 21px;
+    border: 2px solid royalblue;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: royalblue;
+    color: white;
+    transition: all .5s;
+    margin-top: 10px;
+}
+.rsm-signup-form-container > form > button:hover {
+    background-color: white;
+    color: royalblue;
+}
+.rsm-signup-form-container > form > input:focus{
+    background-color: #e4f1e6;
+}
+.rsm-form-validation-error {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 10px 0;
+    font-size: 18px;
+    color: red;
+    transition: all .4s;
+}
+input[type="password"] {
+    font-size: 55px;
+}
+/********************* under 1500px ***********************/
+
+@media screen and (max-width: 1500px) {
+    .rsm-signup-form-container  {
+        width: 35%;
+    }
+}
+
+/********************** under 1200px *********************/
+
+@media screen and (max-width: 1200px) {
+    .rsm-signup-form-container {
+        width: 40%;
+        margin-top: 2cm;
+    }
+}
+
+/************************ under 900px *******************/
+
+@media screen and (max-width: 900px) {
+    .rsm-signup-form-container {
+        width: 50%;
+        margin-top: 1cm;
+    }
+}
+/************************ under 700px *******************/
+
+@media screen and (max-width: 700px) {
+    .rsm-login-form-container {
+        width: 80%;
+    }
+}
+/***************************** under 500px *****************/
+
+@media screen and (max-width: 500px) {
+    .rsm-signup-form-container {
+        width: 90%;
+        margin-top: 1cm;
+    }
+}

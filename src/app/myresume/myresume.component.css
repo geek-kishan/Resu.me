@@ -1,0 +1,50 @@
+.rsm-my-resume {
+    width: 100%;
+}
+.rsm-sidebar {
+    width: 20%;
+    background-color: purple;
+    float: left;
+    transition: all .4s;
+}
+.rsm-content-area {
+    width: 80%;
+    float: left;
+    transition: all .4s;
+}
+.rsm-sidebar-heading h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 16px 15px;
+}
+.rsm-sidebar-toggled {
+    width: 0%;
+    transition: all .4s;
+}
+.rsm-content-area-toggled {
+    width: 100%;
+    transition: all .4s;
+}
+.rsm-content-area-heading-bar {
+    background-color: #96f03d;
+    width: 100%;
+    display: table;
+}
+.rsm-sidebar-toggler-icon {
+    font-size: 35px;
+    color: purple;
+    width: 10%;
+    display: table-cell;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+.rsm-content-area-text {
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    color: purple;
+    padding: 10px 10px;
+    display: table-cell;
+    vertical-align: middle;
+}

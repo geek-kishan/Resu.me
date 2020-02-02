@@ -1,0 +1,107 @@
+.rsm-home {
+    width: 100%;
+    /* background-color: salmon; */
+}
+.rsm-home-sidebar {
+    width: 20%;
+    /* background-color: sienna; */
+    /* min-height: 25cm; */
+    transition: all .4s;
+    /* position: fixed;
+    z-index: 1; */
+    display: block;
+    float: left;
+    overflow-x: hidden;
+}
+.rsm-home-search-area {
+    width: 80%;
+    transition: all .4s;
+    /* min-height: 25cm; */
+    /* background-color: orange; */
+    display: block;
+    float: left;
+}
+.rsm-home-search-area-toggled {
+    width: 100%;
+    transition: all .4s;
+}
+.rsm-home-sidebar-toggled {
+    width: 0;
+    transition: all .4s;
+}
+.rsm-home-sidebar-heading {
+    color: white;
+    background-color: purple;
+}
+.rsm-home-sidebar-heading h2 {
+    text-align: center;
+    /* width: 100%; */
+    margin: 0;
+    padding: 15px 0;
+}
+.rsm-search-area-search-bar {
+    width: 100%;
+    background-color: #96f03d;
+    /* height: 1.8cm; */
+    display: table;
+    padding: 11px 0;
+}
+.rsm-sidebar-toggler-icon {
+    font-size: 35px;
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    color: purple;
+}
+.rsm-search-area-search-form {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* .rsm-search-area-search-form-select {
+    width: 80%;
+}
+.rsm-search-form-fields {
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
+} */
+.rsm-search-area-search-form > form > div {
+    display: inline-block;
+}
+.rsm-search-area-search-form > form > div > select {
+    width: 70%;
+    border: none;
+    border: 2px solid purple;
+    font-size: 21px;
+}
+.rsm-search-area-search-form > form > div > label {
+    padding: 0 10px;
+    color: purple;
+    font-size: 21px;
+}
+.rsm-search-area-search-form > form > div > button {
+    font-size: 21px;
+    border: 2px solid purple;
+    margin-left: 25px;
+}
+.rsm-search-area-search-form > form > div > h3 {
+    color: purple;
+    font-size: 10px;
+}
+.rsm-search-area-search-form > form > div > select > option {
+    font-size: 25px;
+}
+/**************************** under 500px *******************/
+
+@media screen and (max-width: 600px) {
+    .rsm-home-search-area {
+        width: 100%;
+    }
+    .rsm-home-sidebar {
+        width: 0%;
+    }
+    .rsm-home-sidebar-toggled {
+        width: 100%;
+        position: absolute;
+    }
+}

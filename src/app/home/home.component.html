@@ -1,0 +1,38 @@
+<div class="rsm-home">
+    <div class="rsm-home-sidebar" [class.rsm-home-sidebar-toggled]="isShow">
+        <div class="rsm-home-sidebar-heading">
+            <h2>Filters
+                <span>
+                    <fa-icon [icon]="faTimesCircle" (click)="toggleSidebar()"></fa-icon>
+                </span>
+            </h2>
+        </div>
+    </div>
+    <div class="rsm-home-search-area" [class.rsm-home-search-area-toggled]="isShow">
+        <div class="rsm-search-area-search-bar">
+            <fa-icon [icon]="faBars" (click)="toggleSidebar()" class="rsm-sidebar-toggler-icon"></fa-icon>
+            <div class="rsm-search-area-search-form">
+                <form [formGroup]="searchForm">
+                    <!-- <div style="width: 15%;">
+                        <h3>Search Profiles:</h3>
+                    </div> -->
+                    <div  style="width: 40%;" class="rsm-search-form-fields">
+                        <label for="jobType">Job Type:</label>
+                        <select name="jobtype" id="jobtype" class="rsm-search-area-search-form-select"></select>
+                    </div>
+                    <div  style="width: 40%;" class="rsm-search-form-fields">
+                        <label for="jobarea">Job Area:</label>
+                        <select name="jobarea" id="jobarea" class="rsm-search-area-search-form-select">
+                            <option value="">one</option>
+                            <option value="">two</option>
+                            <option value="">three</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
